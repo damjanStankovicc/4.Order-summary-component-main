@@ -1,0 +1,167 @@
+.background {
+  background-color: hsl(225, 100%, 94%);
+}
+
+/* Pale blue: hsl(225, 100%, 94%)
+Bright blue: hsl(245, 75%, 52%)
+Neutral
+Very pale blue: hsl(225, 100%, 98%)
+Desaturated blue: hsl(224, 23%, 55%)
+Dark blue: hsl(223, 47%, 23%) */
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 390px; /* 430, 650 */
+  height: 590px;
+  border-radius: 17px;
+  display: grid;
+  grid-template-rows: 180px 0.5fr 0.25fr 0.5fr 0.5fr;
+  grid-template-columns: 390px;
+  position: relative;
+  top: 5%;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.illustration {
+  width: 390px;
+  height: 180px;
+  position: absolute;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.heading-text {
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0px;
+  font-weight: 900;
+}
+
+.text > div > p {
+  color: hsl(224, 23%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 25px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text {
+  display: grid;
+  grid-template-rows: 60px 90px;
+}
+
+.plan-info {
+  background-color: hsl(225, 100%, 98%);
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 15px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.75fr;
+  place-items: center;
+  position: relative;
+}
+
+.music-icon {
+  margin-left: 15px;
+}
+
+.more {
+  position: absolute;
+  left: 85px;
+}
+
+.more > h2 {
+  font-weight: 900;
+}
+
+.plan {
+  color: hsl(223, 47%, 23%);
+  font-family: 'Red Hat Display', sans-serif;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+.link {
+  grid-column-start: -2;
+  grid-column-end: -1;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.link > a {
+  font-size: 15px;
+}
+
+.button-payment {
+  width: 330px;
+  height: 50px;
+  background-color: rgba(70, 70, 230, 0.955);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  z-index: 1;
+  border-radius: 11px;
+  border-width: 0;
+  place-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: rgba(60, 60, 163, 0.5) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: box-shadow 0.3s;
+  align-self: self-end;
+}
+
+.button-payment:hover {
+  cursor: pointer;
+}
+
+.button-payment:active {
+  box-shadow: rgba(60, 60, 163, 0.5) 0px 10px 10px -5px,
+    rgba(0, 0, 0, 0.04) 0px 5px 5px -2px;
+}
+
+.button-cancel {
+  z-index: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  border: 0;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.button-cancel:hover {
+  cursor: pointer;
+}
